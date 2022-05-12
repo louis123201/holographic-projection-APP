@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
+
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .wrap {
+            width: 375px;
+            height: 1399px;
+            background-color: #1F1F1F;
+            
+            margin: auto;
+
+        }
+
+        .search_box {
+            position: relative;
+            top: 25px;
+
+
+        }
+
+        .search_bar {
+            display: flex;
+            border-radius: 9px;
+            height: 33px;
+            background: #3E3E3E;
+            width: 289px;
+            margin-left: 18px;
+
+        }
+
+        .search_bar img {
+            margin-top: 9px;
+            margin-left: 19px;
+            width: 16px;
+            height: 16px;
+        }
+
+        input {
+
+            outline: none;
+            border: 0;
+            background-color: rgba(0, 0, 0, 0);
+        }
+
+        input::placeholder {
+
+            font-family: 'Oswald';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+            color: #989898;
+        }
+
+        .AD {
+            height: 156px;
+            width: 338px;
+            border-radius: 9px;
+            background: #FFF1A7;
+            margin: auto;
+            margin-top: 50px;
+
+        }
+
+        .AD img {
+            display: inline;
+            margin-left: 155px;
+            margin-top: 7px;
+        }
+
+        .AD p {
+            position: absolute;
+            top: 98px;
+            left: 39px;
+            width: 65px;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 16px;
+            line-height: 24px;
+            font-family: 'Oswald';
+            color: #787467;
+            /* identical to box height */
+
+        }
+
+        .AD h1 {
+            position: absolute;
+            top: 138px;
+            left: 53px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 36px;
+            font-family: 'Oswald';
+            /* identical to box height */
+
+
+            color: #555143;
+
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+
+        }
+
+        .AD .outline {
+
+            position: relative;
+            height: 28.11px;
+            background: #FFFCFC;
+            box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 156px;
+            width: 64px;
+
+        }
+
+        .AD .inline {
+            position: absolute;
+            left: 2.5px;
+            top: 2px;
+            border-radius: 156px;
+            height: 24px;
+            background: #FFFCFC;
+            box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.25);
+            width: 58.59px;
+
+
+        }
+
+        .inline input {
+            top: 2px;
+            left: 17px;
+            font-family: 'Oswald';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 18px;
+            position: absolute;
+            color: #625C5C;
+            /* identical to box height */
+
+
+
+
+        }
+
+        .AD_buttom {
+            position: absolute;
+            top: 197px;
+            left: 76px;
+        }
+
+        .menu {
+            display: flex;
+
+            justify-content: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            width: 100%;
+            height: 180px;
+            margin-top: 32px;
+
+        }
+
+        .menu .item {
+
+            text-align: center;
+            width: 80px;
+            height: 74px;
+
+        }
+
+        .menu .item p {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            /* identical to box height */
+            font-family: 'Oswald';
+
+
+            color: #6C6C6C;
+        }
+
+        .recommand_title {
+            margin-left: 28px;
+            margin-top: 36px;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 18px;
+            line-height: 27px;
+            font-family: 'Oswald';
+            color: #656565;
+            /* identical to box height */
+
+
+        }
+
+        .recommand_box {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+            width: 100%;
+            height: 316px;
+            margin-top: 22px;
+           
+        }
+
+
+        .recommand_item {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 28px;
+            width: 100%;
+            height: 87px;
+            border-radius: 9px;
+            
+        }
+
+        .recommand_item h4 {
+            
+            margin-left: 25px;
+            margin-top: 7px;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 16px;
+            line-height: 24px;
+            font-family: 'Oswald';
+            color: #968d8d;
+        }
+            
+            
+
+
+        .recommand_item p {
+            margin-left: 25px;
+            margin-top: 17px;
+            font-family: 'Oswald';
+            font-style: normal;
+            font-weight: 800;
+            color: #968d8d;
+            font-size: 12px;
+            line-height: 18px;
+        }
+            
+        .recommand_item a{
+            margin-left: 50px;
+            margin-top: 30px;
+           
+        }
+
+
+
+        .buttom_toolbar{
+            position:fixed ;
+            top: 605px;
+            width: 100%;
+            height: 62px;
+            background: #383636;
+        }
+        .btn_box{
+            display: flex;
+            justify-content: center;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            height: 62px;
+            
+        }
+
+        .btn_box .item{
+            
+            width: 48px;
+            height: 46px;
+        }
+        
+    </style>
+</head>
+
+
+
+<body>
+
+
+    <div class="wrap">
+
+
+
+        <div class="search_box">
+            <div class="search_bar"><img src="pic\akar-icons_search.png" alt=""><input type="text" name="search"
+                    id="search" placeholder="  搜尋投影書">
+
+            </div>
+        </div>
+
+
+        <div class="AD">
+            <img src="pic\Group 39.png" alt="">
+            <p>歡迎使用</p>
+            <h1>親子投影書</h1>
+            <div class="AD_buttom">
+                <div class="outline">
+                    <div class="inline">
+                        <input type="button" value="試閱"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="menu">
+            <div class="item">
+                <a href=""></a>
+                <img src="pic\Ellipse 1.png" alt="">
+
+                <p>經典</p>
+
+            </div>
+            <div class="item">
+                <a href=""></a>
+                <img src="pic\Ellipse 12.png" alt="">
+                <p>短小說</p>
+
+            </div>
+            <div class="item">
+                <a href=""></a>
+                <img src="pic\4628642.png" style="width: 51px" alt="">
+                <p>日本</p>
+
+            </div>
+            <div class="item">
+                <a href=""></a>
+                <img src="pic\5511398.png" style="width: 51px;" alt="">
+                <p>英語</p>
+
+            </div>
+            <div class="item">
+
+                <a href=""></a>
+                <img src="pic\910280.png" style="width: 51px;" alt="">
+                <p>民俗</p>
+            </div>
+            <div class="item">
+
+                <a href=""></a>
+                <img src="pic\4114764.png" style="width: 51px;" alt="">
+                <p>科幻</p>
+            </div>
+            <div class="item">
+                <a href=""></a>
+                <img src="pic\728873.png" style="width: 51px" alt="">
+                <p>奇幻冒險</p>
+
+            </div>
+            <div class="item">
+                <a href=""></a>
+                <img src="pic\1302467.png" style="width: 51px;" alt="">
+                <p>童謠</p>
+
+            </div>
+
+        </div>
+
+        <div class="recommand_title">為你推薦</div>
+
+        <div class="recommand_box">
+
+
+            <div class="recommand_item">
+                <img src="pic\Rectangle 3.png" alt="">
+                <div class="txt">
+                    <h4>大野狼與小紅帽</h4>
+                    <p>膾炙人口的美國童話故事</p>
+                </div>
+               <a href="video.html"> <img src="pic\Polygon 1.png" alt=""></a>
+            </div>
+
+            <div class="recommand_item">
+                <img src="pic\Rectangle 5.png" alt="">
+                <div class="txt">
+                    <h4>大野狼與小紅帽</h4>
+                    <p>膾炙人口的美國童話故事</p>
+                </div>
+                <a href=""> <img src="pic\Polygon 1.png" alt=""></a>
+            </div>
+
+            <div class="recommand_item">
+                <img src="pic\Rectangle 4.png" alt="">
+                <div class="txt">
+                    <h4>大野狼與小紅帽</h4>
+                    <p>膾炙人口的美國童話故事</p>
+                </div>
+                <a href=""> <img src="pic\Polygon 1.png" alt=""></a>
+            </div>
+
+
+        </div>
+
+
+        <div class="buttom_toolbar">
+           <div class="btn_box">
+               <div class="item"><a href=""><img src="pic\Group 19.png" alt=""></a></div>
+               <div class="item"><a href=""><img src="pic\Group 41.png" alt=""></a></div>
+               <div class="item"><a href=""><img src="pic\Group 42.png" alt=""></a></div>
+               <div class="item"><a href=""><img src="pic\Group 45.png" alt=""></a></div>
+           </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
